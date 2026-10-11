@@ -1,5 +1,9 @@
 # YT Cloud Player
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Doge-person/yt-cloud/blob/main/yt_cloud_colab.ipynb)
+
+**Quickest way:** click the badge above, then **Runtime → Run all** and paste a link into the player. The rest of this README covers the Codespaces version.
+
 Paste a YouTube link. yt-dlp downloads it at up to 1080p **on a cloud machine** (GitHub Codespaces), and the page plays it back.
 
 ## Launch (browser or VS Code)
