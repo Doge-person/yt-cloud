@@ -1,0 +1,16 @@
+{
+  "name": "YT Cloud Player",
+  "image": "mcr.microsoft.com/devcontainers/python:3.12",
+  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y ffmpeg && pip install --upgrade -r requirements.txt",
+  "postAttachCommand": {
+    "server": "python app.py"
+  },
+  "forwardPorts": [8000],
+  "portsAttributes": {
+    "8000": { "label": "YT Cloud Player", "onAutoForward": "openPreview" }
+  },
+  "customizations": {
+    "vscode": { "extensions": ["ms-python.python"] },
+    "codespaces": { "openFiles": ["README.md"] }
+  }
+}
